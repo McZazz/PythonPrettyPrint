@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"></link>
+    <title></title>
+  </head>
+  <body>
+    <div class="code">
+      <p><span class="cg">##################################### </span></p>
+      <p><span class="t10 cw"><span class="cw">Flask Hello World </span></p>
+      <p><span class="cg">##################################### </span></p>
+      <p class="hidden">*</p>
+      <p>from <span class="cw">flask</span> import <span class="cw">Flask </span></p>
+      <p><span class="cw">app </span>=<span class="cw"> </span><span class="fg">Flask</span><span class="cw">(__name__)</span><span class="t7 cg"><span class="cg"># creates application object instance of Flask class, </span></p>
+      <p><span class="t28 cg"><span class="cg"># __name__ means we are running flask directly </span></p>
+      <p><span class="cw">@app.</span><span class="fg">route</span><span class="cw">(</span><span class="sg">'/'</span><span class="cw">)</span><span class="t13 cg"><span class="cg"># decorator that links the page to the route indicated </span></p>
+      <p>def <span class="fg">index</span><span class="cw">():</span><span class="t16 cg"><span class="cg"># we add a page to our flask app, defines the page </span></p>
+      <p><span class="t4 ">return <span class="sg">'&lt;h1&gt;Hello World!&lt;/h1&gt;'</span><span class="t6 cg"><span class="cg"># prints this to the page </span></p>
+      <p class="hidden">*</p>
+      <p>if <span class="cw">__name__ </span>==<span class="cw"> </span><span class="sg">'__main__'</span><span class="cw">:</span><span class="t6 cg"><span class="cg"># if we are running this script, </span></p>
+      <p><span class="t4 cw"><span class="cw">app.</span><span class="fg">run</span><span class="cw">()</span><span class="t19 cg"><span class="cg"># we are running the application</span></p>
+
+    </div>
+  </body>
+</html>

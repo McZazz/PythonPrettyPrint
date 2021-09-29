@@ -1,0 +1,13 @@
+#####################################
+          Flask Hello World
+#####################################
+
+from flask import Flask
+app = Flask(__name__)       # creates application object instance of Flask class,
+                            # __name__ means we are running flask directly
+@app.route('/')             # decorator that links the page to the route indicated
+def index():                # we add a page to our flask app, defines the page
+    return '<h1>Hello World!</h1>'      # prints this to the page
+
+if __name__ == '__main__':      # if we are running this script,
+    app.run()                   # we are running the application
